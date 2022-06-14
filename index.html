@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>page.1</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		h1{font-size: 32px;}
+		h2{font-size: 24px;}
+		h3{font-size: 20px;}
+		
+		.header{
+			width: 100%;
+			height: 96px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #0c1270;
+		}
+		.logo1{
+			position: relative;
+			left: 16px;
+			top: 16px;
+			width: 105px;
+			height: 64px;
+		 	background-image: url(https://i.postimg.cc/Bn30vSHp/LOGO.png);
+		 	background-size: cover;
+		 	background-repeat: no-repeat;
+		}
+		.team-sel{
+			width: 348px;
+			height: 60px;
+			display: flex;
+			position: absolute;
+			right: 16px;
+			top: 23px;
+		}
+		.team-sel img{
+			width: 50px;
+			height: 50px;
+			margin-right: 20px;
+		}
+		.team-sel a{
+			vertical-align: middle;
+		}
+		.profile{
+			display: inline-block;
+		}
+		.profile img{
+			width: 50px;
+			height: 50px;
+		}
+/*header*/
+
+		.header-img{
+			margin-right: auto;
+			margin-left: auto;
+			width: 1920px;
+			height: 942px;
+			background-image: url(https://i.postimg.cc/PrkKqFRh/1.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin-top: 56px;
+		}
+		#flex{
+			display: flex;
+			width: 1206px;
+		}
+		.head-vi{
+			height: 551px;
+			width: 582px;
+			position: relative;
+			left: 363px;
+			top: 8px;
+			color: #ffffff;
+		}
+		.highlight{
+			width: 582px;
+			height: 470px;
+			margin-top: 16px;
+			padding: 8px;
+			background-color: #303030;
+		}
+		.highlight img{
+			margin-bottom: 8px;
+
+		}
+		.like{
+			float: right;
+		}
+		.theme-news{
+			height: 551px;
+			width: 582px;
+			position: relative;
+			top: 8px;
+			left: 390px;
+			padding: 8px;
+			color: #ffffff;
+			float: right;
+		}
+		.theme-art{
+			width: 582px;
+			height: 488px;
+			margin-top:16px;
+			padding-top: 50px;
+			line-height: 20px;
+		}
+		.theme-art li{
+			list-style: none;
+		}
+		.theme-art a{
+			text-decoration: none;
+			color: #d9d9d9;
+		}
+/*theme-art*/		
+		.theme-vi{
+			width: 1414px;
+			height: 359px;
+			display: flex;
+			color: #fff;
+		}
+		.theme-vi{
+			width: 1206px;
+			height: 359px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.vi{
+			width: 378px;
+			height: 359px;
+			display: inline-block;
+			background-color: #303030;
+			padding: 8px;
+		}
+		.vi:not(:last-child){
+			margin-right: 30px;
+		}
+		.vi img{
+			width: 362px;
+			height: 219px;
+		}
+		.vi .like{
+			margin-top: 36px;
+		}
+/*theme-vi*/
+
+		.info{
+			width: 1194px;
+			height: 1281px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.info h1{
+			margin-top: 32px;
+			margin-bottom: 24px;
+			text-align: center;
+		}
+		.nav{
+			width: 1194px;
+			height: 66px;
+			background-color: #0c1270;
+			display: flex;
+			margin-bottom: 32px;
+		}
+		.navi{
+			width: 174px;
+			height: 66px;
+			text-align: center;
+		}
+		.navi:not(:last-child){
+			margin-right: 30px;
+		}
+		.navi :hover{
+			color: rgba(100, 100, 100, 0.8);
+		}
+		.nav a{
+			text-decoration: none;
+			color: #fff;
+			line-height: 66px;
+			font-weight: 700;
+		}
+/*nav*/		
+		.info-l{
+			width: 378px;
+			height: 1069;
+			display: inline-block;
+		}
+		.title{
+			text-align: center;
+			height: 45px;
+			background-color: #0c1270;
+			color: #fff;
+			line-height: 45px;
+		}
+		.mid{
+			height: 35px;
+			background-color: #d9d9d9;
+			line-height: 15px;
+			color: #808080;
+		}
+		.sche-li{
+			height: 152px;
+			border: 3px solid #a4a4a4;
+		}
+		.선수명{
+			position: relative;
+			left: 98px;
+			top: 9px;
+		}
+		.구단{
+			position: relative;
+			left: 200px;
+			top: 9px;
+		}
+		.골{
+			position: relative;
+			left: 237px;
+			top: 9px;
+		}
+		.팀명{
+			position: relative;
+			left: 85px;
+			top: 9px;
+		}
+		.경기{
+			position: relative;
+			left: 150px;
+			top: 9px;
+			margin-right: 4px;
+			margin-left: 4px;
+		}
+		.goal-li{
+			display: flex;
+			width: 378px;
+			height: 216px;
+			line-height: 42px;
+			border: 3px solid #a4a4a4;
+		}
+		.goal-li .list1{
+			text-align: left;
+			margin-left: 30px;
+
+		}
+		.goal-li .list2{
+			width: 81px;
+			text-align: center;
+		}
+		.goal-li .list2 li{
+			list-style: none;
+		}
+		.team-li{
+			display: flex;
+			width: 378px;
+			line-height: 42px;
+			border: 3px solid #a4a4a4;
+		}
+		.team-li .list1{
+			text-align: left;
+			margin-left: 30px;
+			width: 160px;
+		}
+		.team-li .list2{
+			display: inline-block;
+			margin-right: 8px;
+			margin-left: 8px;
+		}
+		.team-li .list2 li{
+			list-style: none;
+		}
+		.flexx{
+			display: flex;
+		}
+		.info-r{
+			width: 786px;
+			display: inline-block;
+			margin-left: 30px;
+		}
+		.title2{
+			width: 786px;
+			height: 45px;
+			line-height: 45px;
+			text-align: center;
+			color: #fff;
+			background-color: #0c1270;
+		}
+		.pop-vi{
+			width: 786px;
+			height: 611px;
+			color: #000000;
+			border: 3px solid #a4a4a4;
+			padding: 8px;
+			
+		}
+		.pop-vi .vi{
+			width: 378px;
+			height: 298px;
+			display: inline-block;
+			background-color: #fff;
+			padding: 8px;
+			margin: 0px;
+		}
+		
+		.pop-vi p{
+			font-size: 24px;
+			font-weight: 700;
+		}
+		.community{
+			width: 393px;
+			display: inline-block;
+		}
+		.contents{
+			padding: 8px;
+			border: 3px solid #949494;
+			height: 220px;
+		}
+		.contents li{
+			list-style: none;
+			font-size: 20px;
+		}
+		.contents a{
+			text-decoration: none;
+			color: #000;
+		}
+		.article{
+			width: 393px;
+			display: inline-block;
+		}
+		.com{
+			width: 786px;
+			display: flex;
+		}
+/*info*/
+		.footer{
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 60px;
+			width: 1194px;
+			height: 96px;
+			background-color: #0c1270;
+		}
+		.law{
+			padding-top: 16px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.law a{
+			text-decoration: none;
+			color: #fff;
+			font-weight: 700px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.link{
+			padding: 16px;
+			display: inline;
+			vertical-align: middle;
+		}
+		.insta{
+			width: 43px;
+			height: 43px;
+		}
+		.youtube{
+			width: 58px;
+			height: 39px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo1"></div>
+		<div class="team-sel">
+			<a href="index.html"><img src="https://i.postimg.cc/VLJV94TS/image.png"></a>
+			<a href="페이지2.html"><img src="https://i.postimg.cc/hPw4sRFR/fc-logo.png"></a>
+			<a href="#"><img src="https://i.postimg.cc/SKLymXnm/mu-logo.png"></a>
+			<a href="#"><img src="https://i.postimg.cc/bvfyX0N6/1.png"></a>
+			<div class="profile">
+				<a href="#"><img src="https://i.postimg.cc/x1zfFpYJ/profile.png"></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- header -->
+
+	<div class="header-img">
+		<div id="flex">
+			<div class="head-vi">
+				<h1><b>맞춤 영상</b></h1>
+				<div class="highlight">
+					<a href="#"><img src="https://i.postimg.cc/mkNPzQs8/image-1.png" width="566px" height="354px"></a>
+					<h2>[프리미어리그] 38R 토트넘 VS 노리치 하이라이트</h2>
+					<p>2022.5.23 경기영상 조회수: 273,287회</p>
+					<div class="like">
+						<p>좋아요: 16,354개</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- head-vi -->
+			<div class="theme-news">
+				<h1>News</h1>
+				<div class="theme-art">
+					<ul>
+						<li><a href="#"><h3>런던 매체 "토트넘 새로운 프리킥 키커 찾았다"</h3></a></li>
+						<br><li><a href="#"><h3>'착실한 전력 보강' 토트넘, 스펜스 영입 곧 발표</h3></a></li>
+						<br><li><a href="#"><h3>"케인 프리킥 득점, 본 적 없다... 이젠 SON 차야" 토트넘 팬들 요구...</h3></a></li>
+						<br><li><a href="#"><h3>'토트넘 레전드' 킨 "손흥민, EPL 역사상 가장 과소평가된 선수"</h3></a></li>
+						<br><li><a href="#"><h3>‘방출 유력’ 토트넘 수비수, 베일의 후배 감싸기 “콘테, 출전 좀 시켜줘”</h3></a></li>
+						<br><li><a href="#"><h3>SON 인터뷰 시청 가능...토트넘, 새로운 공식 구단 앱 출시</h3></a></li>
+						<br><li><a href="#"><h3>토트넘, 골칫덩이 품어 손해 막심 “그 금액 지불할...</h3></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- theme-news -->
+		<div class="theme-vi">
+			<span></span>
+			<div class="theme-video">
+				<div class="vi">
+					<a href="#"><img src="https://i.postimg.cc/HWhGrHC5/image-2.png" alt="#"></a>
+					<h2>손흥민 골모음</h2>
+					<p>2022.05.23 클립영상 조회수: 333,154회</p>
+					<div class="like">좋아요: 15,345개</div>
+				</div>
+				<div class="vi">
+					<a href="#"><img src="https://i.postimg.cc/Dy9tcg0w/image-3.png" alt="#"></a>
+					<h2>헤리 케인 인터뷰</h2>
+					<p>2022.05.23 클립영상 조회수: 123,994회</p>
+					<div class="like">좋아요: 15,345개</div>
+				</div>
+				<div class="vi">
+					<a href="#"><img src="https://i.postimg.cc/YqG5gVpP/image-4.png" alt="#"></a>
+					<h2>손흥민 모우라 콤비네이션</h2>
+					<p>2022.05.23 클립영상 조회수:323,194회</p>
+					<div class="like">좋아요: 5,722개</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- theme-vi -->
+	</div>
+	
+	<!-- header-img -->
+
+	<div class="info">
+		<h1>리그 정보</h1>
+		<div class="nav">
+			<div class="navi"><a href="#">프리미어리그</a></div>
+			<div class="navi"><a href="#">라리가</a></div>
+			<div class="navi"><a href="#">분데스리가</a></div>
+			<div class="navi"><a href="#">세리에 A</a></div>
+			<div class="navi"><a href="#">K리그</a></div>
+			<div class="navi"><a href="#">더보기</a></div>
+		</div>
+		<div class="flexx">
+			<div class="info-l">
+				<div class="title">
+					<h2>경기 일정/결과</h2>
+				</div>
+				<div class="mid" style="text-align: center; line-height: 40px;"><h3>6월12일(일)</h3></div>
+				<div class="sche-li"></div>
+				<div class="title">
+					<a href="페이지3.html" style="text-decoration: none; color: #fff;"><h2>개인 순위</h2></a>
+				</div>
+				<div class="mid">
+					<span class="선수명">선수명</span>
+					<span class="구단">구단</span>
+					<span class="골">골</span>
+				</div>
+				<div class="goal-li">
+					<div class="list1">
+						<ol>
+							<li><b>손흥민</b></li>
+							<li>모하메드 살라</li>
+							<li>크리스티아누 호날두</li>
+							<li>해리 케인</li>
+							<li>사디오 마네</li>
+						</ol>
+					</div>
+					<div class="list2">
+						<ul>
+							<li>토트넘</li>
+							<li>리버풀</li>
+							<li>맨유</li>
+							<li>토트넘</li>
+							<li>리버풀</li>
+						</ul>
+					</div>
+					<div class="list2">
+						<ul>
+							<li><b>23골</b></li>
+							<li>23골</li>
+							<li>18골</li>
+							<li>17골</li>
+							<li>16골</li>
+						</ul>
+					</div>
+				</div>
+				<div class="title">
+					<h2>팀 순위</h2>
+				</div>
+				<div class="mid">
+					<span class="팀명">팀명</span>
+					<span class="경기">경기</span>
+					<span class="경기">승</span>
+					<span class="경기">무</span>
+					<span class="경기">패</span>
+					<span class="경기">승점</span>
+				</div>
+				<div class="team-li">
+					<div class="list1">
+						<ol>
+							<li><b>맨시티</b></li>
+							<li>리버풀</li>
+							<li>첼시</li>
+							<li>토트넘</li>
+							<li>아스널</li>
+							<li>맨유</li>
+							<li>웨스트햄</li>
+							<li>레스터</li>
+							<li>브라이튼</li>
+							<li>울버햄튼</li>
+						</ol>
+					</div>
+					<div class="list2">
+						<ul>
+							<li>38</li>
+							<li>38</li>
+							<li>38</li>
+							<li>38</li>
+							<li>38</li>
+							<li>38</li>
+							<li>38</li>
+							<li>38</li>
+							<li>38</li>
+							<li>38</li>
+						</ul>
+					</div>
+					<div class="list2">
+							<ul>
+							<li>29</li>
+							<li>28</li>
+							<li>21</li>
+							<li>22</li>
+							<li>22</li>
+							<li>16</li>
+							<li>16</li>
+							<li>14</li>
+							<li>12</li>
+							<li>15</li>
+						</ul>
+					</div>
+					<div class="list2">
+						<ul>
+							<li>6</li>
+							<li>8</li>
+							<li>11</li>
+							<li>5</li>
+							<li>3</li>
+							<li>10</li>
+							<li>8</li>
+							<li>10</li>
+							<li>15</li>
+							<li>6</li>
+						</ul>
+					</div>
+					<div class="list2">
+						<ul>
+							<li>3</li>
+							<li>2</li>
+							<li>6</li>
+							<li>11</li>
+							<li>13</li>
+							<li>12</li>
+							<li>14</li>
+							<li>14</li>
+							<li>11</li>
+							<li>17</li>
+						</ul>
+					</div>
+					<div class="list2">
+						<ul>
+							<li><b>93</b></li>
+							<li>92</li>
+							<li>74</li>
+							<li>71</li>
+							<li>69</li>
+							<li>58</li>
+							<li>56</li>
+							<li>52</li>
+							<li>51</li>
+							<li>51</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- info-l -->
+
+			<div class="info-r">
+				<div class="title2">
+					<h2>인기 영상</h2>
+				</div>
+				<div class="pop-vi">
+					<div class="vi">
+						<a href="https://www.youtube.com/watch?v=JfxgkHsRScI"><img src="https://i.postimg.cc/BnMRGbpZ/1111.jpg" alt="#"></a>
+						<p>의외로 사람들이 모르는 것) 베일 첫 월드컵 본선</p>
+					</div>
+					<div class="vi">
+						<a href="https://www.youtube.com/watch?v=IHalYXYvrUI"><img src="https://i.postimg.cc/9FPvJJq7/2222.jpg" alt="#"></a>
+						<p>프리미어리그가 다른 리그를 <br>압살한 이유</p>
+					</div>
+					<div class="vi">
+						<a href="https://www.youtube.com/watch?v=i5iOPJlo0ro"><img src="https://i.postimg.cc/44cChJfw/333.jpg" alt="#"></a>
+						<p>[ 네이션스리그] 독일 vs 잉글랜드 MVP 케인</p>
+					</div>
+					<div class="vi">
+						<a href="https://www.youtube.com/watch?v=MBAdiwbyTM4"><img src="https://i.postimg.cc/fbJQtshF/4444.jpg" alt="#"></a>
+						<p>리버풀 레전드가 손흥민을 <br>인정했던 경기ㄷㄷ..</p>
+					</div>
+				</div>
+				<div class="com">
+					<div class="community">
+						<div class="title"><h2>커뮤니티 게시판</h2></div>
+						<div class="contents" style="line-height: 42px;">
+							<ul>
+								<li><a href="#">손흥민 득점왕에 관한 건</a></li>
+								<li><a href="#">토트넘 프리킥은 흥민꺼</a></li>
+								<li><a href="#">캐인 이적함?</a></li>
+								<li><a href="#">"손흥민 월드클래스 아니야"</a></li>
+								<li><a href="#">이 사이트 맛집이다~</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="article">
+						<div class="title"><h2>연관 기사</h2></div>
+						<div class="contents" style="line-height: 30px;">
+							<ul>
+								<li><a href="#">토트넘, '한국전 골' 히샬리송 품을까...800억 협상 진전</a></li>
+								<li><a href="#">리버풀, 이적료 1억 유로에 포르투갈리그 득점왕 누네즈 영입</a></li>
+								<li><a href="#">'큰 실수 비난 NO' 英대표팀 라이벌 감싸는 대인배, "사람들이 경기를 몰라"</a></li>
+								<li><a href="#">"손흥민 월드클래스 아니야"</a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- info-r -->
+		</div>
+
+		<!-- info -->
+
+	</div>
+	
+	<div class="footer">
+		<div class="law">
+			<a href="#">이용약관</a>
+			<a href="#">댓글/게시글 운영원칙</a>
+			<a href="#">책임의 한계와 법적고지</a>
+			<a href="#">고객센터</a>
+		</div>
+		<div class="link">
+			<a href="#"><img src="https://i.postimg.cc/pXsXr8cX/1.png" class="insta"></a>
+			<a href="#"><img src="https://i.postimg.cc/HkM4dp3z/1.png" class="youtube"></a>
+		</div>
+	</div>
+</body>
+</html>
